@@ -1,10 +1,12 @@
 import torch
+import os
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from train import OUTPUT_PATH
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 1. Load the fine-tuned model and tokenizer from the saved directory
-model_path = "/kaggle/working/dialogpt-dailydialog-final"
+model_path = os.path.join(OUTPUT_PATH, 'data', 'DialoGPT-final')
 print(f"Loading model from {model_path}...")
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path).to(DEVICE)
