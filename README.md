@@ -2,6 +2,8 @@
 
 A conversational AI chatbot built by fine-tuning Microsoft's [DialoGPT-small](https://huggingface.co/microsoft/DialoGPT-small) on the [DailyDialog](https://www.kaggle.com/datasets/thedevastator/dailydialog-unlock-the-conversation-potential-in) dataset. The model is trained to engage in natural conversations and supports multi-turn dialogue.
 
+[![Kaggle Notebook](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/majdkhuzam/fine-tuning-dialogpt-on-dailydialog-dataset)
+
 ---
 
 ## Table of Contents
