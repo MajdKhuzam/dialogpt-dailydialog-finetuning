@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DialoGPT · Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <span class="brand-name">DialoGPT</span>
+      </div>
+      <span class="session-badge" id="session-label">initialising…</span>
+      <button id="new-session-btn">↺ New session</button>
+    </header>
+
+    <div id="messages">
+      <div id="empty-state">
+        <div class="icon">⌨</div>
+        <p>type something to begin</p>
+      </div>
+    </div>
+
+    <footer>
+      <div id="input-row">
+        <textarea id="user-input" rows="1" placeholder="Send a message…"></textarea>
+        <button id="send-btn" title="Send">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
